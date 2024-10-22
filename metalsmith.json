@@ -1,0 +1,17 @@
+{
+  "source": "src",
+  "destination": "build",
+  "metadata": {
+    "subtitle": "Chim chimney",
+    "author": "Some Guy",
+    "body": "It's about saying »Hello« to the world."
+  },
+  "plugins": [
+    { "@metalsmith/in-place": {
+      "transform": "handlebars",
+      "extname": ".html",
+      "pattern": "**/*.{htm,html}*",
+      "engineOptions": {}
+    } }
+  ]
+}
